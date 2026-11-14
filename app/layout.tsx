@@ -6,6 +6,7 @@ import '@fontsource/manrope/700.css';
 import '@fontsource/manrope/800.css';
 import './globals.css';
 import './reference.css';
+import './centering.css';
 import { Shell } from '@/components/Shell';
 
 export const metadata: Metadata = {

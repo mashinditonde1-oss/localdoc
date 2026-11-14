@@ -1,0 +1,64 @@
+/* Centered composition shared by the home page, each tool page and footer. */
+.brand-mark{width:34px;height:34px;background:#000;border-radius:9px}
+.brand-mark img{object-fit:cover}
+.footer{width:100%;max-width:none;min-height:0;padding:27px 18px 30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
+.footer .brand{justify-content:center;font-size:16px}
+.footer .brand-mark{width:31px;height:31px}
+.footer>span{margin:0;font-size:11px;line-height:1.6}
+.footer>a{font-size:11px}
+.section-heading{display:block;text-align:center;margin:0 auto 31px}
+.section-heading h2{margin:10px 0 0}
+.section-heading p{max-width:590px;margin:12px auto 0;line-height:1.7}
+.tool-group{text-align:center}
+.group-title{justify-content:center}
+.tool-grid{max-width:1000px;margin-inline:auto}
+.workflow-card{text-align:center}
+.workflow-card>p{margin-left:auto;margin-right:auto}
+.workflow-steps{justify-content:center}
+.feature-steps>div{margin:0 auto;text-align:center}
+.price-card{text-align:center}
+.price-card ul{max-width:280px;margin:17px auto 0;text-align:left}
+.guide-grid{max-width:900px;margin-inline:auto}
+.guide-card{text-align:center}
+.guide-card>span{margin-inline:auto}
+.guide-card>div{align-self:center}
+.faq-grid{margin-inline:auto}
+.faq-grid details{text-align:center}
+.faq-grid summary{justify-content:center;position:relative;padding:0 24px}
+.faq-grid summary span{position:absolute;right:0}
+.faq-grid details p{max-width:500px;margin:11px auto 0}
+.tool-page{text-align:center}
+.tool-crumb{justify-content:center}
+.tool-intro>p{margin-inline:auto;max-width:680px}
+.workspace-main .options{max-width:700px;margin:14px auto 0}
+.workspace-main .run-button{display:flex;margin:17px auto 0;max-width:500px}
+.workspace-main>.status,.workspace-main>.result-text,.workspace-main>.swatches{max-width:700px;margin-left:auto;margin-right:auto}
+.rotate-options{justify-content:center}
+.single-image-actions{margin-left:0}
+.tool-guide,.tool-faq,.tool-related{text-align:center}
+.tool-guide>p{margin-inline:auto}
+.tool-guide-steps{max-width:730px;margin-inline:auto}
+.tool-guide-steps li{justify-content:center;text-align:left}
+.tool-faq>div{margin-inline:auto}
+.tool-faq summary{justify-content:center;position:relative;padding:0 24px}
+.tool-faq summary span{position:absolute;right:0}
+.tool-faq details p{max-width:560px;margin:10px auto 0}
+.tool-related>div{max-width:700px;margin-inline:auto}
+.related-tool{align-items:center;text-align:center}
+.tool-proof-row{justify-content:center}
+.blur-toolbar,.redact-toolbar,.redact-actions{justify-content:center}
+.blur-canvas-wrap,.redact-canvas-wrap{display:flex;justify-content:center}
+.editor-status,.editor-note{text-align:center}
+.tool-seo-content{margin-left:auto;margin-right:auto}
+@media(max-width:780px){
+  .section-heading{display:block;text-align:center}
+  .section-heading p{margin:12px auto 0}
+}
+@media(max-width:540px){
+  .brand-mark{width:31px;height:31px}
+  .footer .brand-mark{width:29px;height:29px}
+  .guide-card{grid-template-columns:1fr;justify-items:center;gap:7px}
+  .guide-card h3{font-size:11px}
+  .tool-guide-steps li{align-items:flex-start;justify-content:flex-start}
+  .single-image-actions{flex-wrap:wrap;justify-content:center}
+}

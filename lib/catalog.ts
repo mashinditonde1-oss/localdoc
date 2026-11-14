@@ -31,14 +31,15 @@ export const tools: Tool[] = [
   { slug:'protect-pdf',name:'Protect PDF',description:'Encrypt a PDF with a password.',group:'PDF',accept:'.pdf,application/pdf',mode:'pdf' },
   { slug:'pdf-to-images',name:'PDF to JPG / PNG',description:'Render every PDF page to images and download them as a ZIP.',group:'PDF',accept:'.pdf,application/pdf',mode:'pdf' },
   { slug:'pdf-to-text',name:'PDF to Markdown / Text',description:'Extract selectable PDF text into a text file.',group:'PDF',accept:'.pdf,application/pdf',mode:'pdf' },
-  { slug:'docx-to-pdf',name:'Word to PDF',description:'Convert DOCX text and headings into a paginated PDF.',group:'Office',accept:'.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document',mode:'office' },
+  { slug:'docx-to-pdf',name:'Word to PDF',description:'Render DOCX pages with their tables, images, and page layout preserved.',group:'Office',accept:'.docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document',mode:'office' },
   { slug:'xlsx-to-pdf',name:'Excel to PDF',description:'Convert XLSX sheets or CSV data into paginated PDF tables.',group:'Office',accept:'.xlsx,.xls,.csv',mode:'office' },
   { slug:'pptx-to-pdf',name:'PowerPoint to PDF',description:'Convert PPTX slide text and images to landscape PDF pages.',group:'Office',accept:'.pptx,application/vnd.openxmlformats-officedocument.presentationml.presentation',mode:'office' },
+  { slug:'pdf-to-word',name:'PDF to Word',description:'Place each PDF page into Word as a full-page image to preserve the original layout.',group:'Office',accept:'.pdf,application/pdf',mode:'office' },
 ];
 
 export const workflows = [
   { title:'Job application pack', steps:['Images to PDF','Compress PDF'], text:'Combine portfolio scans, then keep the attachment easy to email.' },
-  { title:'Signed contract', steps:['Word to PDF','Sign PDF','Watermark PDF'], text:'Prepare a document, add a signature, then mark your copy.' },
+  { title:'Signed contract', steps:['Word to PDF','Sign PDF','Watermark PDF'], text:'Keep the original page layout, then sign and mark your copy.' },
   { title:'Web-ready photos', steps:['Resize image','Compress image','Remove EXIF data'], text:'Resize for the page, reduce file size and strip embedded metadata.' },
   { title:'Share a clean excerpt', steps:['Split / extract pages','PDF to Markdown / Text'], text:'Pull out relevant pages and make the text easy to reuse.' },
 ];

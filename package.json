@@ -1,0 +1,32 @@
+{
+  "name": "localdoc-suite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/copy-worker.mjs && node scripts/prepare-source.mjs && next dev",
+    "copy:worker": "node scripts/copy-worker.mjs",
+    "build": "node scripts/copy-worker.mjs && node scripts/prepare-source.mjs && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.7.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "gifenc": "^1.0.3",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.9.0",
+    "next": "^15.2.4",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+.next/
+out/
+public/pdf.worker.min.mjs
+public/localdoc-source.zip
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example

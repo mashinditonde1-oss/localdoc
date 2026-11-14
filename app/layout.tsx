@@ -9,10 +9,11 @@ import './reference.css';
 import { Shell } from '@/components/Shell';
 
 export const metadata: Metadata = {
-  title: 'LocalDoc — Private file tools, right in your browser',
+  title: 'LocalDoc | Private File Tools',
   description: 'Convert, edit and organize images, PDFs and Office files locally. Free, private, and nothing ever uploads.',
   applicationName: 'LocalDoc',
-  openGraph: { title: 'LocalDoc — Private file tools', description: 'All your file tools. Nothing leaves your device.', type: 'website', siteName: 'LocalDoc' },
+  icons: { icon: '/localdoc-logo.png', shortcut: '/localdoc-logo.png', apple: '/localdoc-logo.png' },
+  openGraph: { title: 'LocalDoc | Private File Tools', description: 'All your file tools. Nothing leaves your device.', type: 'website', siteName: 'LocalDoc' },
   robots: { index: true, follow: true },
 };
 
